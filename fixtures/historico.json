@@ -1,0 +1,239 @@
+{
+  "periodoAtual": {
+    "de": "2026-08-06",
+    "ate": "2026-09-04"
+  },
+  "periodoAnterior": {
+    "de": null,
+    "ate": null
+  },
+  "disponibilidade": {
+    "serieAtual": [
+      782683.73,
+      796442.51,
+      810538.35,
+      807740.38,
+      830190.64,
+      831595.29,
+      835596.62,
+      846389.08,
+      857037.23,
+      860894.56,
+      874951.52,
+      901115.58,
+      911312.19,
+      923225.35,
+      934225.15,
+      943688.89,
+      959340.31,
+      966130.34,
+      965097.18,
+      970383.09,
+      991210.46,
+      1003401.21,
+      1029842.62,
+      1053360.71,
+      1071855.73,
+      1085442.22,
+      1088954.95,
+      1085704.32,
+      1098807.75,
+      1107971.12
+    ],
+    "serieAnterior": [
+      723695.22,
+      762130.04,
+      763173.47,
+      741759.95,
+      787854.95,
+      761119.06,
+      791653.05,
+      808548.3,
+      799707.89,
+      819899.35,
+      807241.95,
+      822936.25,
+      848973.67,
+      867110.74,
+      900735.2,
+      895065.97,
+      923369.99,
+      910133.64,
+      890853.07,
+      899184.25,
+      923835.9,
+      961124.62,
+      938973.48,
+      992219.57,
+      1006359.47,
+      1022455.16,
+      1050967.87,
+      996793.32,
+      1058405.41,
+      1036041.86
+    ],
+    "finalAtual": 1107971.12,
+    "finalAnterior": 1036041.86,
+    "variacao": 71929.26
+  },
+  "pagar": {
+    "totalAtual": 583933.94,
+    "totalAnterior": 429582.75,
+    "variacao": 154351.19,
+    "variacaoPct": 35.9,
+    "itens": [
+      {
+        "nome": "Fornecedor Demo G - Telecom",
+        "atual": 53001.12,
+        "anterior": 0.0,
+        "variacao": 53001.12,
+        "variacaoPct": 100.0,
+        "pendente": 32757.01
+      },
+      {
+        "nome": "Fornecedor Demo C - Insumos Lab.",
+        "atual": 52176.63,
+        "anterior": 0.0,
+        "variacao": 52176.63,
+        "variacaoPct": 100.0,
+        "pendente": 39033.06
+      },
+      {
+        "nome": "Fornecedor Demo E - Limpeza",
+        "atual": 29537.37,
+        "anterior": 0.0,
+        "variacao": 29537.37,
+        "variacaoPct": 100.0,
+        "pendente": 25489.84
+      },
+      {
+        "nome": "Fornecedor Demo F - Energia Elétrica",
+        "atual": 67247.71,
+        "anterior": 43280.89,
+        "variacao": 23966.82,
+        "variacaoPct": 55.4,
+        "pendente": 49929.32
+      },
+      {
+        "nome": "Fornecedor Demo D - TI e Software",
+        "atual": 73553.22,
+        "anterior": 61631.75,
+        "variacao": 11921.47,
+        "variacaoPct": 19.3,
+        "pendente": 47462.64
+      },
+      {
+        "nome": "Fornecedor Demo I - Locação Imóvel",
+        "atual": 63461.32,
+        "anterior": 69812.07,
+        "variacao": -6350.75,
+        "variacaoPct": -9.1,
+        "pendente": 63461.32
+      },
+      {
+        "nome": "Fornecedor Demo H - Consultoria Médica",
+        "atual": 132635.18,
+        "anterior": 138376.95,
+        "variacao": -5741.77,
+        "variacaoPct": -4.1,
+        "pendente": 92708.03
+      },
+      {
+        "nome": "Fornecedor Demo A - Contrastes",
+        "atual": 72629.26,
+        "anterior": 75514.83,
+        "variacao": -2885.57,
+        "variacaoPct": -3.8,
+        "pendente": 27414.16
+      },
+      {
+        "nome": "Fornecedor Demo B - Manutenção Equip.",
+        "atual": 39692.13,
+        "anterior": 40966.26,
+        "variacao": -1274.13,
+        "variacaoPct": -3.1,
+        "pendente": 14703.3
+      }
+    ]
+  },
+  "receber": {
+    "totalAtual": 418364.43,
+    "totalAnterior": 345897.68,
+    "variacao": 72466.75,
+    "variacaoPct": 21.0,
+    "itens": [
+      {
+        "nome": "Cliente Demo H - Clínica Parceira",
+        "atual": 32418.17,
+        "anterior": 0.0,
+        "variacao": 32418.17,
+        "variacaoPct": 100.0,
+        "pendente": 19985.9
+      },
+      {
+        "nome": "Cliente Demo B - Convênio Vida Plena",
+        "atual": 34925.12,
+        "anterior": 22201.67,
+        "variacao": 12723.45,
+        "variacaoPct": 57.3,
+        "pendente": 33247.56
+      },
+      {
+        "nome": "Cliente Demo I - Convênio Regional",
+        "atual": 35783.96,
+        "anterior": 24246.84,
+        "variacao": 11537.12,
+        "variacaoPct": 47.6,
+        "pendente": 33997.0
+      },
+      {
+        "nome": "Cliente Demo E - Convênio Bem Estar",
+        "atual": 48138.36,
+        "anterior": 39088.52,
+        "variacao": 9049.84,
+        "variacaoPct": 23.2,
+        "pendente": 12473.29
+      },
+      {
+        "nome": "Cliente Demo A - Convênio Saúde Norte",
+        "atual": 67730.12,
+        "anterior": 61306.33,
+        "variacao": 6423.79,
+        "variacaoPct": 10.5,
+        "pendente": 67730.12
+      },
+      {
+        "nome": "Cliente Demo G - Convênio Único",
+        "atual": 50216.84,
+        "anterior": 55768.44,
+        "variacao": -5551.6,
+        "variacaoPct": -10.0,
+        "pendente": 21280.78
+      },
+      {
+        "nome": "Cliente Demo C - Convênio MedFácil",
+        "atual": 37864.27,
+        "anterior": 34457.31,
+        "variacao": 3406.96,
+        "variacaoPct": 9.9,
+        "pendente": 32464.52
+      },
+      {
+        "nome": "Cliente Demo F - Hospital Parceiro",
+        "atual": 60828.0,
+        "anterior": 59541.88,
+        "variacao": 1286.12,
+        "variacaoPct": 2.2,
+        "pendente": 60828.0
+      },
+      {
+        "nome": "Cliente Demo D - Particular Balcão",
+        "atual": 50459.59,
+        "anterior": 49286.69,
+        "variacao": 1172.9,
+        "variacaoPct": 2.4,
+        "pendente": 30803.65
+      }
+    ]
+  }
+}

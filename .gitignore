@@ -1,0 +1,18 @@
+# Ambiente / credenciais - nunca versionar
+.env
+.venv/
+venv/
+
+# Usuários reais do app (hash de senha) - nunca versionar
+data/users.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

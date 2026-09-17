@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar · Transduson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+<style>
+  html, body { overflow: auto; height: 100%; display: flex; align-items: center; justify-content: center; }
+  .login-card {
+    width: 340px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 28px 26px;
+  }
+  .login-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+  .login-brand span { font-weight: 600; font-size: 15px; }
+  .login-form { display: flex; flex-direction: column; gap: 12px; }
+  .login-field { display: flex; flex-direction: column; gap: 5px; font-size: 11.5px; color: var(--text-muted); }
+  .login-field input { background: var(--surface-raised); border: 1px solid var(--border); border-radius: 3px; padding: 8px 10px; color: var(--text); font-size: 13px; }
+  .login-field input:focus { outline: none; border-color: var(--accent-pos-dim); }
+  .login-submit { margin-top: 4px; background: var(--accent-pos-dim); border: none; border-radius: 3px; padding: 9px 0; color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .login-submit:hover { background: var(--accent-pos); }
+  .login-error { font-size: 12px; color: var(--accent-neg); min-height: 16px; }
+</style>
+</head>
+<body>
+
+<div class="login-card">
+  <div class="login-brand">
+    <svg viewBox="0 0 24 24" width="20" height="20">
+      <path d="M3 17 L9 9 L13 13 L21 4" stroke="#2fb6a3" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 4 H21 V10" stroke="#2fb6a3" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Transduson · Fluxo de Caixa</span>
+  </div>
+
+  <form class="login-form" id="form-entrar">
+    <label class="login-field">
+      <span>E-mail</span>
+      <input type="email" id="entrar-email" required autocomplete="username">
+    </label>
+    <label class="login-field">
+      <span>Senha</span>
+      <input type="password" id="entrar-senha" required autocomplete="current-password">
+    </label>
+    <div class="login-error" id="entrar-erro"></div>
+    <button class="login-submit" type="submit">Entrar</button>
+  </form>
+</div>
+
+<script src="/static/js/login.js"></script>
+</body>
+</html>

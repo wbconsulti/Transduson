@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuários · Transduson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+<style>
+  html, body { overflow: auto; height: 100%; }
+  .usuarios-wrap { max-width: 640px; margin: 0 auto; padding: 28px 20px; }
+  .usuarios-back { display: inline-block; margin-bottom: 16px; color: var(--text-muted); font-size: 12px; text-decoration: none; }
+  .usuarios-back:hover { color: var(--text); }
+  .usuarios-form { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 20px; }
+  .usuarios-field { display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: var(--text-muted); }
+  .usuarios-field input { background: var(--surface-raised); border: 1px solid var(--border); border-radius: 3px; padding: 7px 9px; color: var(--text); font-size: 13px; min-width: 150px; }
+  .usuarios-field input:focus { outline: none; border-color: var(--accent-pos-dim); }
+  .usuarios-submit { background: var(--accent-pos-dim); border: none; border-radius: 3px; padding: 8px 16px; color: #fff; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+  .usuarios-submit:hover { background: var(--accent-pos); }
+  .usuarios-msg { font-size: 12px; min-height: 16px; width: 100%; }
+  .usuarios-msg.erro { color: var(--accent-neg); }
+  .usuarios-msg.ok { color: var(--accent-pos); }
+</style>
+</head>
+<body>
+
+<div class="usuarios-wrap">
+  <a class="usuarios-back" href="/">← Voltar ao painel</a>
+  <h1 style="font-size:17px; margin:0 0 4px;">Usuários</h1>
+  <p style="font-size:12px; color:var(--text-muted); margin:0 0 20px;">Quem tem acesso ao painel.</p>
+
+  <form class="usuarios-form" id="form-novo-usuario">
+    <label class="usuarios-field">
+      <span>Nome</span>
+      <input type="text" id="novo-nome" required>
+    </label>
+    <label class="usuarios-field">
+      <span>E-mail</span>
+      <input type="email" id="novo-email" required>
+    </label>
+    <label class="usuarios-field">
+      <span>Senha</span>
+      <input type="password" id="novo-senha" required minlength="6">
+    </label>
+    <button class="usuarios-submit" type="submit">Adicionar usuário</button>
+    <div class="usuarios-msg" id="novo-msg"></div>
+  </form>
+
+  <div class="panel table-panel">
+    <table id="usuarios-table"></table>
+  </div>
+</div>
+
+<script src="/static/js/usuarios.js"></script>
+</body>
+</html>

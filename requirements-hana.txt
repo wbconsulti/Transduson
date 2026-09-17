@@ -1,0 +1,4 @@
+# Driver oficial SAP HANA. Instale só quando for rodar contra o banco real
+# (USE_FIXTURES=false). Mantido separado do requirements.txt principal pra
+# não forçar esse binário em quem só quer rodar a v1 demo.
+hdbcli>=2.19

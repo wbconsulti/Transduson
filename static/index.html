@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluxo de Caixa · Transduson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M3 17 L9 9 L13 13 L21 4" stroke="var(--accent-pos)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 4 H21 V10" stroke="var(--accent-pos)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Transduson</span>
+    </div>
+
+    <nav class="tabs">
+      <button class="tab is-active" data-screen="resumo">Resumo diário</button>
+      <button class="tab" data-screen="detalhe">Detalhe</button>
+      <button class="tab" data-screen="pagar">Contas a pagar</button>
+      <button class="tab" data-screen="receber">Contas a receber</button>
+      <button class="tab" data-screen="historico">Histórico</button>
+    </nav>
+
+    <span class="source-pill" id="source-pill">…</span>
+    <div class="user-box" id="user-box">
+      <a class="user-link" href="/usuarios">Usuários</a>
+      <span class="user-name" id="user-name"></span>
+      <button class="btn-logout" id="logout-btn" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ============ TELA 1 — RESUMO DIÁRIO ============ -->
+    <section class="screen is-active" id="screen-resumo">
+      <header class="screen-head">
+        <div class="screen-head-title">
+          <h1>Resumo diário</h1>
+          <p class="screen-desc">Posição de abertura por banco + fluxo diário consolidado.</p>
+        </div>
+        <div class="filters">
+          <div class="view-toggle">
+            <button class="view-toggle-btn is-active" data-view="fluxo" type="button">Fluxo diário</button>
+            <button class="view-toggle-btn" data-view="dash" type="button">Pagar &amp; Receber</button>
+          </div>
+          <label class="field" id="resumo-de-field">
+            <span>De</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="resumo-de">
+          </label>
+          <label class="field" id="resumo-ate-field">
+            <span>Até</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="resumo-ate">
+          </label>
+          <button class="btn-export" id="resumo-export-btn" type="button">Exportar CSV</button>
+        </div>
+      </header>
+
+      <div class="resumo-view is-active" id="resumo-view-fluxo">
+        <div class="panel panel-fixed" id="resumo-abertura-panel">
+          <div class="panel-title-row">
+            <h2>Posição de abertura por banco</h2>
+            <span class="panel-hint" id="resumo-abertura-hint"></span>
+          </div>
+          <div class="table-scroll table-scroll--capped">
+            <table id="resumo-abertura-table"></table>
+          </div>
+        </div>
+
+        <div class="panel panel-fixed chart-panel">
+          <div class="panel-title-row">
+            <h2>Disponibilidade projetada</h2>
+            <span class="panel-hint">Fluxo consolidado — movimento futuro ainda não tem banco definido no SAP</span>
+          </div>
+          <div id="resumo-chart"></div>
+        </div>
+
+        <div class="panel panel-grow">
+          <div class="table-scroll">
+            <table id="resumo-table"></table>
+          </div>
+        </div>
+      </div>
+
+      <div class="resumo-view" id="resumo-view-dash">
+        <div class="panel panel-grow">
+          <div class="table-scroll" id="dash-scroll">
+            <div class="dash-kpis" id="dash-kpis"></div>
+            <div class="dash-columns">
+              <div class="dash-col">
+                <h3 class="dash-col-title neg">Contas a Pagar — mês corrente</h3>
+                <div class="dash-block">
+                  <h4>Por status</h4>
+                  <div id="dash-pagar-status"></div>
+                </div>
+                <div class="dash-block">
+                  <h4>Por CFO</h4>
+                  <div id="dash-pagar-cfo"></div>
+                </div>
+                <div class="dash-block">
+                  <h4>Por centro de custo</h4>
+                  <div id="dash-pagar-centro"></div>
+                </div>
+              </div>
+              <div class="dash-col">
+                <h3 class="dash-col-title pos">Contas a Receber — mês corrente</h3>
+                <div class="dash-block">
+                  <h4>Por status</h4>
+                  <div id="dash-receber-status"></div>
+                </div>
+                <div class="dash-block">
+                  <h4>Por CFO</h4>
+                  <div id="dash-receber-cfo"></div>
+                </div>
+                <div class="dash-block">
+                  <h4>Por centro de custo</h4>
+                  <div id="dash-receber-centro"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELA 2 — DETALHE ============ -->
+    <section class="screen" id="screen-detalhe">
+      <header class="screen-head">
+        <div class="screen-head-title">
+          <h1>Detalhe</h1>
+          <p class="screen-desc">Movimentos por documento.</p>
+        </div>
+        <div class="filters">
+          <label class="field">
+            <span>De</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="detalhe-de">
+          </label>
+          <label class="field">
+            <span>Até</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="detalhe-ate">
+          </label>
+          <label class="field">
+            <span>CFO</span>
+            <select id="detalhe-cfo-filter"><option value="">Todos</option></select>
+          </label>
+          <button class="btn-export" id="detalhe-export-btn" type="button">Exportar CSV</button>
+        </div>
+      </header>
+
+      <div class="panel panel-fixed" id="detalhe-abertura-panel">
+        <div class="panel-title-row">
+          <h2>Posição de abertura por banco</h2>
+        </div>
+        <div class="table-scroll table-scroll--capped">
+          <table id="detalhe-abertura-table"></table>
+        </div>
+      </div>
+
+      <div class="panel panel-grow">
+        <div class="table-meta" id="detalhe-meta"></div>
+        <div class="table-scroll">
+          <table id="detalhe-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELA 3 — CONTAS A PAGAR ============ -->
+    <section class="screen" id="screen-pagar">
+      <header class="screen-head">
+        <div class="screen-head-title">
+          <h1>Contas a pagar</h1>
+          <p class="screen-desc">Parcelas por fornecedor e centro de resultado.</p>
+        </div>
+        <div class="filters">
+          <label class="field">
+            <span>De</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="pagar-de">
+          </label>
+          <label class="field">
+            <span>Até</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="pagar-ate">
+          </label>
+          <label class="field">
+            <span>Status</span>
+            <select id="pagar-status-filter"><option value="">Todos</option></select>
+          </label>
+          <label class="field">
+            <span>CFO</span>
+            <select id="pagar-cfo-filter"><option value="">Todos</option></select>
+          </label>
+          <label class="field field-search">
+            <span>Fornecedor</span>
+            <input type="search" id="pagar-fornec-filter" placeholder="Buscar…">
+          </label>
+          <button class="btn-export" id="pagar-export-btn" type="button">Exportar CSV</button>
+        </div>
+      </header>
+
+      <div class="totalizer panel-fixed" id="pagar-totalizer"></div>
+
+      <div class="panel panel-grow">
+        <div class="table-scroll">
+          <table id="pagar-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELA 4 — CONTAS A RECEBER ============ -->
+    <section class="screen" id="screen-receber">
+      <header class="screen-head">
+        <div class="screen-head-title">
+          <h1>Contas a receber</h1>
+          <p class="screen-desc">Parcelas por cliente e centro de resultado.</p>
+        </div>
+        <div class="filters">
+          <label class="field">
+            <span>De</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="receber-de">
+          </label>
+          <label class="field">
+            <span>Até</span>
+            <input type="text" class="date-input" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" id="receber-ate">
+          </label>
+          <label class="field">
+            <span>Status</span>
+            <select id="receber-status-filter"><option value="">Todos</option></select>
+          </label>
+          <label class="field">
+            <span>CFO</span>
+            <select id="receber-cfo-filter"><option value="">Todos</option></select>
+          </label>
+          <label class="field field-search">
+            <span>Cliente</span>
+            <input type="search" id="receber-cliente-filter" placeholder="Buscar…">
+          </label>
+          <button class="btn-export" id="receber-export-btn" type="button">Exportar CSV</button>
+        </div>
+      </header>
+
+      <div class="totalizer panel-fixed" id="receber-totalizer"></div>
+
+      <div class="panel panel-grow">
+        <div class="table-scroll">
+          <table id="receber-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELA 5 — HISTÓRICO ============ -->
+    <section class="screen" id="screen-historico">
+      <header class="screen-head">
+        <div class="screen-head-title">
+          <h1>Histórico</h1>
+          <p class="screen-desc" id="historico-periodo-desc">Comparação com o mês anterior.</p>
+        </div>
+        <div class="filters">
+          <button class="btn-export" id="historico-export-btn" type="button">Exportar CSV</button>
+        </div>
+      </header>
+
+      <div class="panel panel-grow">
+        <div class="table-scroll" id="historico-scroll">
+          <div class="narrativa-box" id="historico-narrativa"></div>
+
+          <div class="dash-kpis" id="historico-kpis"></div>
+
+          <div class="panel-title-row" style="margin-top:16px; padding:0 0 4px;">
+            <h2>Disponibilidade — mês atual x mês anterior</h2>
+          </div>
+          <div id="historico-chart"></div>
+
+          <div class="dash-columns" style="margin-top:18px;">
+            <div class="dash-col">
+              <h3 class="dash-col-title neg">Fornecedores em destaque</h3>
+              <div class="table-scroll table-scroll--capped">
+                <table id="historico-pagar-table"></table>
+              </div>
+            </div>
+            <div class="dash-col">
+              <h3 class="dash-col-title pos">Clientes em destaque</h3>
+              <div class="table-scroll table-scroll--capped">
+                <table id="historico-receber-table"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

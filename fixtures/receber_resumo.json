@@ -1,0 +1,634 @@
+{
+  "total": {
+    "Rotulo": "TOTAL GERAL",
+    "ValorAno": 4895555.8,
+    "ValorMes": 418364.43,
+    "ValorVariavel": 33834.78,
+    "LancadoNF": 384597.15,
+    "Pendente": 312810.82,
+    "Realizado": 105553.61,
+    "VarRealiz": 33767.28
+  },
+  "porStatus": [
+    {
+      "Rotulo": "Confirmado",
+      "ValorAno": 1296664.12,
+      "ValorMes": 108029.37,
+      "ValorVariavel": 7908.85,
+      "LancadoNF": 98888.19,
+      "Pendente": 108029.37,
+      "Realizado": 0.0,
+      "VarRealiz": 9141.18
+    },
+    {
+      "Rotulo": "Recebido",
+      "ValorAno": 1227490.09,
+      "ValorMes": 105553.61,
+      "ValorVariavel": 10457.5,
+      "LancadoNF": 96553.17,
+      "Pendente": 0.0,
+      "Realizado": 105553.61,
+      "VarRealiz": 9000.44
+    },
+    {
+      "Rotulo": "Previsto",
+      "ValorAno": 1497588.67,
+      "ValorMes": 127961.66,
+      "ValorVariavel": 8689.47,
+      "LancadoNF": 116825.5,
+      "Pendente": 127961.66,
+      "Realizado": 0.0,
+      "VarRealiz": 11136.16
+    },
+    {
+      "Rotulo": "Vencido",
+      "ValorAno": 873812.92,
+      "ValorMes": 76819.79,
+      "ValorVariavel": 6778.96,
+      "LancadoNF": 72330.29,
+      "Pendente": 76819.79,
+      "Realizado": 0.0,
+      "VarRealiz": 4489.5
+    }
+  ],
+  "porVencimento": [
+    {
+      "Rotulo": "2026-09-11",
+      "ValorAno": 90491.08,
+      "ValorMes": 7188.73,
+      "ValorVariavel": 282.9,
+      "LancadoNF": 6799.58,
+      "Pendente": 7188.73,
+      "Realizado": 0.0,
+      "VarRealiz": 389.15
+    },
+    {
+      "Rotulo": "2026-09-12",
+      "ValorAno": 114999.73,
+      "ValorMes": 9490.02,
+      "ValorVariavel": 1158.36,
+      "LancadoNF": 8941.24,
+      "Pendente": 0.0,
+      "Realizado": 9490.02,
+      "VarRealiz": 548.78
+    },
+    {
+      "Rotulo": "2026-08-10",
+      "ValorAno": 37317.24,
+      "ValorMes": 3235.84,
+      "ValorVariavel": 336.58,
+      "LancadoNF": 2817.38,
+      "Pendente": 3235.84,
+      "Realizado": 0.0,
+      "VarRealiz": 418.46
+    },
+    {
+      "Rotulo": "2026-08-16",
+      "ValorAno": 29747.93,
+      "ValorMes": 2620.27,
+      "ValorVariavel": 123.64,
+      "LancadoNF": 2368.35,
+      "Pendente": 2620.27,
+      "Realizado": 0.0,
+      "VarRealiz": 251.92
+    },
+    {
+      "Rotulo": "2026-10-14",
+      "ValorAno": 75505.18,
+      "ValorMes": 6585.08,
+      "ValorVariavel": 829.61,
+      "LancadoNF": 5627.8,
+      "Pendente": 0.0,
+      "Realizado": 6585.08,
+      "VarRealiz": 957.28
+    },
+    {
+      "Rotulo": "2026-09-06",
+      "ValorAno": 100448.8,
+      "ValorMes": 8745.37,
+      "ValorVariavel": 1013.43,
+      "LancadoNF": 8184.85,
+      "Pendente": 0.0,
+      "Realizado": 8745.37,
+      "VarRealiz": 560.52
+    },
+    {
+      "Rotulo": "2026-10-18",
+      "ValorAno": 185514.25,
+      "ValorMes": 14852.77,
+      "ValorVariavel": 228.18,
+      "LancadoNF": 13288.12,
+      "Pendente": 14852.77,
+      "Realizado": 0.0,
+      "VarRealiz": 1564.65
+    },
+    {
+      "Rotulo": "2026-10-28",
+      "ValorAno": 146314.72,
+      "ValorMes": 11769.1,
+      "ValorVariavel": 418.3,
+      "LancadoNF": 10622.73,
+      "Pendente": 11769.1,
+      "Realizado": 0.0,
+      "VarRealiz": 1146.37
+    },
+    {
+      "Rotulo": "2026-08-26",
+      "ValorAno": 144209.41,
+      "ValorMes": 12314.83,
+      "ValorVariavel": 1487.83,
+      "LancadoNF": 11570.14,
+      "Pendente": 12314.83,
+      "Realizado": 0.0,
+      "VarRealiz": 744.69
+    },
+    {
+      "Rotulo": "2026-09-28",
+      "ValorAno": 28676.57,
+      "ValorMes": 2552.48,
+      "ValorVariavel": 287.19,
+      "LancadoNF": 2275.79,
+      "Pendente": 2552.48,
+      "Realizado": 0.0,
+      "VarRealiz": 276.69
+    },
+    {
+      "Rotulo": "2026-08-23",
+      "ValorAno": 150721.34,
+      "ValorMes": 12530.14,
+      "ValorVariavel": 1431.21,
+      "LancadoNF": 11735.9,
+      "Pendente": 12530.14,
+      "Realizado": 0.0,
+      "VarRealiz": 794.24
+    },
+    {
+      "Rotulo": "2026-07-21",
+      "ValorAno": 77351.0,
+      "ValorMes": 6401.05,
+      "ValorVariavel": 719.93,
+      "LancadoNF": 5877.47,
+      "Pendente": 6401.05,
+      "Realizado": 0.0,
+      "VarRealiz": 523.58
+    },
+    {
+      "Rotulo": "2026-10-21",
+      "ValorAno": 250109.45,
+      "ValorMes": 21048.86,
+      "ValorVariavel": 2736.3,
+      "LancadoNF": 19642.86,
+      "Pendente": 21048.86,
+      "Realizado": 0.0,
+      "VarRealiz": 1406.0
+    },
+    {
+      "Rotulo": "2026-08-19",
+      "ValorAno": 272268.4,
+      "ValorMes": 24383.84,
+      "ValorVariavel": 2339.59,
+      "LancadoNF": 22171.1,
+      "Pendente": 0.0,
+      "Realizado": 24383.84,
+      "VarRealiz": 2212.74
+    },
+    {
+      "Rotulo": "2026-10-01",
+      "ValorAno": 76524.33,
+      "ValorMes": 7132.83,
+      "ValorVariavel": 739.23,
+      "LancadoNF": 6537.82,
+      "Pendente": 3619.45,
+      "Realizado": 3513.38,
+      "VarRealiz": 595.01
+    },
+    {
+      "Rotulo": "2026-07-12",
+      "ValorAno": 16388.37,
+      "ValorMes": 1345.74,
+      "ValorVariavel": 126.29,
+      "LancadoNF": 1230.52,
+      "Pendente": 1345.74,
+      "Realizado": 0.0,
+      "VarRealiz": 115.22
+    },
+    {
+      "Rotulo": "2026-10-03",
+      "ValorAno": 246597.38,
+      "ValorMes": 22219.84,
+      "ValorVariavel": 2229.46,
+      "LancadoNF": 20253.88,
+      "Pendente": 9148.98,
+      "Realizado": 13070.86,
+      "VarRealiz": 1965.96
+    },
+    {
+      "Rotulo": "2026-07-08",
+      "ValorAno": 19447.73,
+      "ValorMes": 1886.37,
+      "ValorVariavel": 228.05,
+      "LancadoNF": 1688.09,
+      "Pendente": 0.0,
+      "Realizado": 1886.37,
+      "VarRealiz": 198.28
+    },
+    {
+      "Rotulo": "2026-07-20",
+      "ValorAno": 82446.08,
+      "ValorMes": 6937.43,
+      "ValorVariavel": 751.77,
+      "LancadoNF": 6325.25,
+      "Pendente": 6937.43,
+      "Realizado": 0.0,
+      "VarRealiz": 612.18
+    },
+    {
+      "Rotulo": "2026-08-25",
+      "ValorAno": 117165.99,
+      "ValorMes": 9089.86,
+      "ValorVariavel": 523.62,
+      "LancadoNF": 7917.04,
+      "Pendente": 9089.86,
+      "Realizado": 0.0,
+      "VarRealiz": 1172.82
+    },
+    {
+      "Rotulo": "2026-07-28",
+      "ValorAno": 37598.05,
+      "ValorMes": 3558.42,
+      "ValorVariavel": 323.96,
+      "LancadoNF": 3369.56,
+      "Pendente": 3558.42,
+      "Realizado": 0.0,
+      "VarRealiz": 188.86
+    },
+    {
+      "Rotulo": "2026-10-25",
+      "ValorAno": 9064.27,
+      "ValorMes": 840.33,
+      "ValorVariavel": 8.51,
+      "LancadoNF": 721.9,
+      "Pendente": 840.33,
+      "Realizado": 0.0,
+      "VarRealiz": 118.43
+    },
+    {
+      "Rotulo": "2026-10-23",
+      "ValorAno": 101692.18,
+      "ValorMes": 8598.02,
+      "ValorVariavel": 811.61,
+      "LancadoNF": 7446.1,
+      "Pendente": 6811.06,
+      "Realizado": 1786.96,
+      "VarRealiz": 1151.92
+    },
+    {
+      "Rotulo": "2026-10-19",
+      "ValorAno": 65155.86,
+      "ValorMes": 5066.44,
+      "ValorVariavel": 332.47,
+      "LancadoNF": 4492.27,
+      "Pendente": 5066.44,
+      "Realizado": 0.0,
+      "VarRealiz": 574.17
+    },
+    {
+      "Rotulo": "2026-08-04",
+      "ValorAno": 113242.82,
+      "ValorMes": 10793.77,
+      "ValorVariavel": 1135.77,
+      "LancadoNF": 10021.48,
+      "Pendente": 10793.77,
+      "Realizado": 0.0,
+      "VarRealiz": 772.29
+    },
+    {
+      "Rotulo": "2026-09-24",
+      "ValorAno": 145436.31,
+      "ValorMes": 11708.6,
+      "ValorVariavel": 51.56,
+      "LancadoNF": 10064.49,
+      "Pendente": 11708.6,
+      "Realizado": 0.0,
+      "VarRealiz": 1644.11
+    },
+    {
+      "Rotulo": "2026-10-17",
+      "ValorAno": 14683.26,
+      "ValorMes": 1398.32,
+      "ValorVariavel": 180.25,
+      "LancadoNF": 1350.78,
+      "Pendente": 1398.32,
+      "Realizado": 0.0,
+      "VarRealiz": 47.54
+    },
+    {
+      "Rotulo": "2026-07-02",
+      "ValorAno": 45950.8,
+      "ValorMes": 4121.54,
+      "ValorVariavel": 291.66,
+      "LancadoNF": 4078.98,
+      "Pendente": 4121.54,
+      "Realizado": 0.0,
+      "VarRealiz": 42.56
+    },
+    {
+      "Rotulo": "2026-09-08",
+      "ValorAno": 172050.41,
+      "ValorMes": 13788.31,
+      "ValorVariavel": 661.7,
+      "LancadoNF": 11967.01,
+      "Pendente": 0.0,
+      "Realizado": 13788.31,
+      "VarRealiz": 1821.3
+    },
+    {
+      "Rotulo": "2026-10-12",
+      "ValorAno": 182572.12,
+      "ValorMes": 14968.13,
+      "ValorVariavel": 1742.03,
+      "LancadoNF": 14510.05,
+      "Pendente": 0.0,
+      "Realizado": 14968.13,
+      "VarRealiz": 458.08
+    },
+    {
+      "Rotulo": "2026-09-21",
+      "ValorAno": 171129.62,
+      "ValorMes": 14294.26,
+      "ValorVariavel": 3.13,
+      "LancadoNF": 13709.37,
+      "Pendente": 14294.26,
+      "Realizado": 0.0,
+      "VarRealiz": 584.89
+    },
+    {
+      "Rotulo": "2026-10-02",
+      "ValorAno": 138459.4,
+      "ValorMes": 10847.8,
+      "ValorVariavel": 151.37,
+      "LancadoNF": 10066.37,
+      "Pendente": 10847.8,
+      "Realizado": 0.0,
+      "VarRealiz": 781.43
+    },
+    {
+      "Rotulo": "2026-08-21",
+      "ValorAno": 18964.73,
+      "ValorMes": 1677.56,
+      "ValorVariavel": 142.88,
+      "LancadoNF": 1485.51,
+      "Pendente": 0.0,
+      "Realizado": 1677.56,
+      "VarRealiz": 192.05
+    },
+    {
+      "Rotulo": "2026-10-09",
+      "ValorAno": 20675.35,
+      "ValorMes": 1675.5,
+      "ValorVariavel": 50.95,
+      "LancadoNF": 1463.23,
+      "Pendente": 1675.5,
+      "Realizado": 0.0,
+      "VarRealiz": 212.27
+    },
+    {
+      "Rotulo": "2026-07-18",
+      "ValorAno": 158310.22,
+      "ValorMes": 14490.74,
+      "ValorVariavel": 451.32,
+      "LancadoNF": 12577.77,
+      "Pendente": 14490.74,
+      "Realizado": 0.0,
+      "VarRealiz": 1912.97
+    },
+    {
+      "Rotulo": "2026-09-05",
+      "ValorAno": 121293.37,
+      "ValorMes": 10840.67,
+      "ValorVariavel": 1574.72,
+      "LancadoNF": 9700.51,
+      "Pendente": 10840.67,
+      "Realizado": 0.0,
+      "VarRealiz": 1140.16
+    },
+    {
+      "Rotulo": "2026-07-15",
+      "ValorAno": 122197.87,
+      "ValorMes": 12176.11,
+      "ValorVariavel": 255.32,
+      "LancadoNF": 12144.27,
+      "Pendente": 12176.11,
+      "Realizado": 0.0,
+      "VarRealiz": 31.84
+    },
+    {
+      "Rotulo": "2026-09-27",
+      "ValorAno": 11613.63,
+      "ValorMes": 913.92,
+      "ValorVariavel": 8.84,
+      "LancadoNF": 794.49,
+      "Pendente": 913.92,
+      "Realizado": 0.0,
+      "VarRealiz": 119.43
+    },
+    {
+      "Rotulo": "2026-08-02",
+      "ValorAno": 125481.74,
+      "ValorMes": 9920.81,
+      "ValorVariavel": 742.41,
+      "LancadoNF": 8563.23,
+      "Pendente": 9920.81,
+      "Realizado": 0.0,
+      "VarRealiz": 1357.58
+    },
+    {
+      "Rotulo": "2026-07-13",
+      "ValorAno": 82823.07,
+      "ValorMes": 7507.46,
+      "ValorVariavel": 879.99,
+      "LancadoNF": 6743.51,
+      "Pendente": 7507.46,
+      "Realizado": 0.0,
+      "VarRealiz": 763.95
+    },
+    {
+      "Rotulo": "2026-07-26",
+      "ValorAno": 16730.14,
+      "ValorMes": 1443.71,
+      "ValorVariavel": 214.72,
+      "LancadoNF": 1443.62,
+      "Pendente": 1443.71,
+      "Realizado": 0.0,
+      "VarRealiz": 0.09
+    },
+    {
+      "Rotulo": "2026-07-25",
+      "ValorAno": 99258.89,
+      "ValorMes": 8889.97,
+      "ValorVariavel": 1310.38,
+      "LancadoNF": 8878.69,
+      "Pendente": 8889.97,
+      "Realizado": 0.0,
+      "VarRealiz": 11.28
+    },
+    {
+      "Rotulo": "2026-07-23",
+      "ValorAno": 166512.71,
+      "ValorMes": 14244.85,
+      "ValorVariavel": 1204.27,
+      "LancadoNF": 14219.22,
+      "Pendente": 14244.85,
+      "Realizado": 0.0,
+      "VarRealiz": 25.63
+    },
+    {
+      "Rotulo": "2026-07-03",
+      "ValorAno": 45735.87,
+      "ValorMes": 3949.78,
+      "ValorVariavel": 129.64,
+      "LancadoNF": 3901.14,
+      "Pendente": 3949.78,
+      "Realizado": 0.0,
+      "VarRealiz": 48.64
+    },
+    {
+      "Rotulo": "2026-07-01",
+      "ValorAno": 111489.18,
+      "ValorMes": 9047.17,
+      "ValorVariavel": 1244.74,
+      "LancadoNF": 8858.09,
+      "Pendente": 9047.17,
+      "Realizado": 0.0,
+      "VarRealiz": 189.08
+    },
+    {
+      "Rotulo": "2026-09-10",
+      "ValorAno": 32948.91,
+      "ValorMes": 2564.9,
+      "ValorVariavel": 60.6,
+      "LancadoNF": 2549.77,
+      "Pendente": 2564.9,
+      "Realizado": 0.0,
+      "VarRealiz": 15.13
+    },
+    {
+      "Rotulo": "2026-08-22",
+      "ValorAno": 65831.67,
+      "ValorMes": 6048.73,
+      "ValorVariavel": 665.96,
+      "LancadoNF": 5143.05,
+      "Pendente": 6048.73,
+      "Realizado": 0.0,
+      "VarRealiz": 905.68
+    },
+    {
+      "Rotulo": "2026-09-26",
+      "ValorAno": 112713.18,
+      "ValorMes": 9810.91,
+      "ValorVariavel": 153.21,
+      "LancadoNF": 8453.78,
+      "Pendente": 9810.91,
+      "Realizado": 0.0,
+      "VarRealiz": 1357.13
+    },
+    {
+      "Rotulo": "2026-10-16",
+      "ValorAno": 70644.8,
+      "ValorMes": 5657.73,
+      "ValorVariavel": 318.54,
+      "LancadoNF": 5299.64,
+      "Pendente": 0.0,
+      "Realizado": 5657.73,
+      "VarRealiz": 358.09
+    },
+    {
+      "Rotulo": "2026-07-10",
+      "ValorAno": 53050.39,
+      "ValorMes": 5189.52,
+      "ValorVariavel": 740.8,
+      "LancadoNF": 4703.36,
+      "Pendente": 5189.52,
+      "Realizado": 0.0,
+      "VarRealiz": 486.16
+    }
+  ],
+  "porCFO": [
+    {
+      "Rotulo": "CFO Receita - Convênios",
+      "ValorAno": 4895555.8,
+      "ValorMes": 418364.43,
+      "ValorVariavel": 33834.78,
+      "LancadoNF": 384597.15,
+      "Pendente": 312810.82,
+      "Realizado": 105553.61,
+      "VarRealiz": 33767.28
+    }
+  ],
+  "porRaizCFO": [
+    {
+      "Rotulo": "5",
+      "ValorAno": 4895555.8,
+      "ValorMes": 418364.43,
+      "ValorVariavel": 33834.78,
+      "LancadoNF": 384597.15,
+      "Pendente": 312810.82,
+      "Realizado": 105553.61,
+      "VarRealiz": 33767.28
+    }
+  ],
+  "porTipoCFO": [
+    {
+      "Rotulo": "Receita",
+      "ValorAno": 4895555.8,
+      "ValorMes": 418364.43,
+      "ValorVariavel": 33834.78,
+      "LancadoNF": 384597.15,
+      "Pendente": 312810.82,
+      "Realizado": 105553.61,
+      "VarRealiz": 33767.28
+    }
+  ],
+  "porCentroCusto": [
+    {
+      "Rotulo": "Administrativo",
+      "ValorAno": 1978302.35,
+      "ValorMes": 167913.41,
+      "ValorVariavel": 12410.6,
+      "LancadoNF": 154882.8,
+      "Pendente": 124753.87,
+      "Realizado": 43159.54,
+      "VarRealiz": 13030.61
+    },
+    {
+      "Rotulo": "Diagnóstico por Imagem",
+      "ValorAno": 1212386.97,
+      "ValorMes": 104065.58,
+      "ValorVariavel": 8155.8,
+      "LancadoNF": 94844.47,
+      "Pendente": 67394.87,
+      "Realizado": 36670.71,
+      "VarRealiz": 9221.11
+    },
+    {
+      "Rotulo": "TI",
+      "ValorAno": 712670.73,
+      "ValorMes": 60780.29,
+      "ValorVariavel": 3939.29,
+      "LancadoNF": 54324.79,
+      "Pendente": 47008.5,
+      "Realizado": 13771.79,
+      "VarRealiz": 6455.5
+    },
+    {
+      "Rotulo": "Comercial",
+      "ValorAno": 992195.75,
+      "ValorMes": 85605.15,
+      "ValorVariavel": 9329.09,
+      "LancadoNF": 80545.09,
+      "Pendente": 73653.58,
+      "Realizado": 11951.57,
+      "VarRealiz": 5060.06
+    }
+  ]
+}
